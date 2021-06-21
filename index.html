@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="card">
+        <div class="card-body">
+          <input
+            type="number"
+            placeholder="Nhập số"
+            id="inputNumber"
+            step="1"
+          />
+          <button class="btn btn-info" id="btnAddNumber">Thêm số</button>
+        </div>
+        <div class="card-footer">
+          <p id="showArr"></p>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            onclick="tinhTongSoDuong()"
+          >
+            Tổng các số dương
+          </button>
+          <span id="showTongSoDuong"></span>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            onclick="demSoDuong()"
+          >
+            Bao nhiêu số dương
+          </button>
+          <span id="showDemSo"></span>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="timSoNhoNhat()"
+          >
+            Tìm số nhỏ nhất
+          </button>
+          <span id="showSoNhoNhat"></span>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            onclick="timSoDuongNhoNhat()"
+          >
+            Tìm số dương nhỏ nhất
+          </button>
+          <span id="showSoDuongNhoNhat"></span>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-info"
+            onclick="timSoChanCuoiCung()"
+          >
+            Tìm số chẵn cuối cùng
+          </button>
+          <span id="showSoChanCC"></span>
+        </div>
+        <div>
+          <input
+            type="number"
+            id="index1"
+            placeholder="Nhấp vị trí đổi chỗ thứ 1"
+          />
+          <input
+            type="number"
+            id="index2"
+            placeholder="Nhấp vị trí đổi chỗ thứ 2"
+          />
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            onclick="doiCho()"
+          >
+            Đổi chỗ 2 số
+          </button>
+          <span id="showArrDoiCho"></span>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            onclick="sapXepTang()"
+          >
+            Sắp xếp tăng
+          </button>
+          <span id="showSapXep"></span>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            onclick="timSoNguyenToDauTien()"
+          >
+            Tìm số nguyên tố đầu tiên
+          </button>
+          <span id="showSoNguyenTo"></span>
+        </div>
+        <div>
+          <form>
+            <input type="number" id="inputFloat" placeholder="Mảng số thực" />
+            <button class="btn btn-danger" id="btnAddFloat">Thêm số</button>
+          </form>
+          <p class="bg-danger text-white p-2" id="showFloat"></p>
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="demSoNguyen() "
+          >
+            Đếm số nguyên
+          </button>
+          <span id="showSoNguyen"></span>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            onclick="soSanhAmDuong()"
+          >
+            So Sánh Số Âm Dương
+          </button>
+          <span id="showSoSanh"></span>
+        </div>
+      </div>
+    </form>
+    <script src="/main.js"></script>
+  </body>
+</html>
